@@ -7,6 +7,21 @@
 
 A tool to easily update Kepler Data for WXtoImg with a graphical user interface on Windows.
 
+## Table of Contents
+
+* [Background](#background)
+* [Installation](#installation)
+    + [Download](#download)
+    + [From Source](#from-source)
+        - [Start with batch script](#start-with-batch-script)
+        - [Bundle with pyinstaller](#bundle-with-pyinstaller)
+        - [Other Python environment](#other-python-environment)
+* [Usage](#usage)
+    + [Update Kepler Data](#update-kepler-data)
+    + [Settings](#settings)
+    + [App-Update](#app-update)
+* [Other solutions to update Kepler Data](#other-solutions-to-update-kepler-data)
+* [License](#license)
 
 ## Background
 
@@ -34,14 +49,21 @@ Kepler Update for WXtoImg is a new, easy to use tool to replace WXtoImgs's built
 ### Download
 
 The easiest way to get Keplers Updater for WXtoImg is to download the latest release from the
-[Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section on the
-right or just click the link below:
+[Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section on the right or just click the
+link below:
 
-[Keplers Updater for WXtoImg v.1.0.0 (Windows 7+)](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/download/v1.0.0/Keplers-Updater.exe)
+[**Keplers Updater for WXtoImg v.1.0.0 (Windows 7+)**](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/download/v1.0.0/Keplers-Updater.exe)
 
-The application doesn't need to be installed. Just double-click **Keplers-Updater.exe** to launch it.
+The application doesn't need to be installed. Just double-click to start.
+
+**Note:** On Windows 10 and newer you will very likely see a warning, saying that "Windows protected your PC" and
+prevented the app from running because it is unrecognized. Because the exe of Keplers Updater was not signed, this is
+expected behaviour. To run the app, click on the small text saying `more info` and then `Run anyway`. Keplers Updater is
+safe to use and not a risk to your PC.
 
 ### From source
+
+#### Start with batch script
 
 The application is written in Python 3.8. The necessary Python packages and binaries for Windows are included in the
 repository. To start the app, from within the root directory of the repository, run:
@@ -56,16 +78,18 @@ Using [pyinstaller](https://github.com/pyinstaller/pyinstaller), the application
 or into a single executable. The UI launches more quickly when bundled into a folder.
 
 To bundle into a single executable, run:
+
 ```cmd
 .\bundle-to-exe.bat
 ```
 
 To bundle into a folder, run:
+
 ```
 .\bundle-to-dir.bat
 ```
 
-The bundled folder or executable can be found in .\dist\
+The bundled folder or executable can be found in `.\dist\`.
 
 #### Other Python environment
 
@@ -74,12 +98,14 @@ To run the app from within your own Python environment, make sure you have the f
 
 ## Usage
 
-Just click on the blue **Update Kepler Data** button to download the latest Kepler data. Before you do, you can check
-the time of last update in the bottom left corner. The progressbar below the button should start to fill.
+### Update Kepler Data
+
+Just click on the blue `Update Kepler Data` button to download the latest Kepler data. Before you do, you can check the
+time of last update in the bottom left corner. The progress bar below the button should start to fill.
 ![UI before data update](assets/ku-pre-update.png)
 
-If the update was successful, you will see that the time of last update will change to **just now** and the blue
-progress bar will remain filled. If the update fails, an error message should pop up instead.
+If the update was successful, you will see that the time of last update will change to `just now` and the blue progress
+bar will remain filled. If the update fails, an error message should pop up instead.
 ![UI after data update](assets/ku-post-update.png)
 
 ### Settings
@@ -90,13 +116,13 @@ opened, so you don't have to press the button.
 **Note**: Changes to the settings will be saved **after** a successful update of the Kepler data.
 
 You shouldn't need to, but just in case Celestrak changes their URLs again, it is possible to change the URL from where
-the Kepler data is downloaded from. Click the **Reset** button to switch it back to the default URL.
+the Kepler data is downloaded from. Click the `Reset` button to switch it back to the default URL.
 ![UI settings](assets/ku-settings.png)
 
 ### App-Update
 
-You can check for new releases of the app by first opening the **About** and then pressing on **Check for updates** in
-the top right corner of the new window. If a new release is available, this will guide you to the
+You can check for new releases of the app by first opening the `About` window and then pressing on `Check for update`
+in the top right corner of the new window. If a new release is available, this will guide you to the
 [Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section here on GitHub.
 
 ![UI about window](assets/ku-about.png)
