@@ -1,9 +1,9 @@
 # Keplers Updater for WXtoImg
 
-![OS - Windows 7+](https://img.shields.io/badge/OS-Windows_7+-lightgray)
-![latest release](https://img.shields.io/github/v/release/stefan-wr/keplers-updater-for-windows)
-![downloads](https://img.shields.io/github/downloads/stefan-wr/keplers-updater-for-windows/total)
-[![GitHub license](https://img.shields.io/github/license/stefan-wr/keplers-updater-for-wxtoimg)](LICENSE)
+![OS - Windows 7+](https://img.shields.io/badge/OS-Windows_7+-lightgray?style=flat-square)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/stefan-wr/keplers-updater-for-wxtoimg?style=flat-square)](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases)
+![GitHub all releases](https://img.shields.io/github/downloads/stefan-wr/keplers-updater-for-wxtoimg/total?style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/stefan-wr/keplers-updater-for-wxtoimg?style=flat-square)](LICENSE)
 
 A tool to easily update Kepler Data for WXtoImg with a graphical user interface on Windows.
 
@@ -33,10 +33,11 @@ Kepler Update for WXtoImg is a new, easy to use tool to replace WXtoImgs's built
 
 ### Download
 
-The easiest way to get Keplers Updater for WXtoImg is to download the latest release from the [Releases](releases)
-section on the right or just click the link below:
+The easiest way to get Keplers Updater for WXtoImg is to download the latest release from the
+[Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section on the
+right or just click the link below:
 
-[Keplers Updater for WXtoImg v.1.0.0 (Windows 7+)](releases)
+[Keplers Updater for WXtoImg v.1.0.0 (Windows 7+)](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/download/v1.0.0/Keplers-Updater.exe)
 
 The application doesn't need to be installed. Just double-click **Keplers-Updater.exe** to launch it.
 
@@ -45,7 +46,9 @@ The application doesn't need to be installed. Just double-click **Keplers-Update
 The application is written in Python 3.8. The necessary Python packages and binaries for Windows are included in the
 repository. To start the app, from within the root directory of the repository, run:
 
-> .\start.bat
+```
+.\start.bat
+```
 
 #### Bundle with pyinstaller
 
@@ -53,10 +56,14 @@ Using [pyinstaller](https://github.com/pyinstaller/pyinstaller), the application
 or into a single executable. The UI launches more quickly when bundled into a folder.
 
 To bundle into a single executable, run:
-> .\bundle-to-exe.bat
+```cmd
+.\bundle-to-exe.bat
+```
 
 To bundle into a folder, run:
-> .\bundle-to-dir.bat
+```
+.\bundle-to-dir.bat
+```
 
 The bundled folder or executable can be found in .\dist\
 
@@ -89,8 +96,8 @@ the Kepler data is downloaded from. Click the **Reset** button to switch it back
 ### App-Update
 
 You can check for new releases of the app by first opening the **About** and then pressing on **Check for updates** in
-the top right corner of the new window. If a new release is available, this will guide you to the [Releases](releases)
-section here on GitHub.
+the top right corner of the new window. If a new release is available, this will guide you to the
+[Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section here on GitHub.
 
 ![UI about window](assets/ku-about.png)
 
