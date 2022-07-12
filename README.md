@@ -110,7 +110,7 @@ bar will remain filled. If the update fails, an error message should pop up inst
 
 ### Settings
 
-Enable the checkbox on the left to automatically update the Kepler data every time Kepler Updater for WXtoImg time is
+Enable the checkbox on the left to automatically update the Kepler data every time Kepler Updater for WXtoImg is
 opened, so you don't have to press the button.
 
 **Note**: Changes to the settings will be saved **after** a successful update of the Kepler data.
@@ -121,7 +121,7 @@ the Kepler data is downloaded from. Click the `Reset` button to switch it back t
 
 ### App-Update
 
-You can check for new releases of the app by first opening the `About` window and then pressing on `Check for update`
+You can check for new releases of the app by first, opening the `About` window and then pressing on `Check for update`
 in the top right corner of the new window. If a new release is available, this will guide you to the
 [Releases](https://github.com/stefan-wr/keplers-updater-for-wxtoimg/releases/) section here on GitHub.
 
