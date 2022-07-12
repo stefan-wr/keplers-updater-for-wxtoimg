@@ -1,3 +1,4 @@
+![readme-header](https://user-images.githubusercontent.com/15983943/178608092-a1a1c651-1202-4a21-9769-d4822e3efbc0.jpg)
 # Keplers Updater for WXtoImg
 
 ![OS - Windows 7+](https://img.shields.io/badge/OS-Windows_7+-lightgray?style=flat-square)
@@ -28,8 +29,8 @@ A tool to easily update Kepler Data for WXtoImg with a graphical user interface 
 WXtoImg is a powerful software for automatically decoding WEFAX and APT weather satellite signals and is still the best
 software for this job and therefore widely used in the community. Unfortunately, WXtoImg is not Open Source and since
 the software was completely abandoned by its developers in 2018, going so far that even its website and all released
-binaries vanished, some members of the community have taken over and collected most information from web archives and
-released them on a new unofficial website [WXtoImg Restored](https://wxtoimgrestored.xyz/).
+binaries vanished, some members of the community have taken over and collected most information from web-archives and
+released them on a new, unofficial website [WXtoImg Restored](https://wxtoimgrestored.xyz/).
 
 ### Kepler Data
 
