@@ -9,7 +9,7 @@ from datetime import datetime
 import math
 from myutils import Popup, resource_path, is_keplers
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 WXTOIMG_DIR = os.path.join(os.getenv('APPDATA'), 'WXtoImg')
 CFG_PATH = os.path.join(WXTOIMG_DIR, 'kepler-updater.cfg')
@@ -355,7 +355,7 @@ class App:
                 self.show_popup(title="Error - Status Code", msg=msg)
                 self.reset_ui()
                 return
-            if not head.headers.get('content-type') == 'text/plain':
+            if not 'text/plain' in head.headers.get('content-type'):
                 msg = "Content-type of the requested URL does not match the expected type" \
                       " 'text/plain'. Please use a different URL or reset it to default."
                 self.show_popup(title="Error - Content-Type", msg=msg)
