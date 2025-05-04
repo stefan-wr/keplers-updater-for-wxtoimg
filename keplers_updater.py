@@ -517,7 +517,7 @@ class App:
         """Check for an updated version of this program"""
         try:
             response = requests.get(VERSION_URL, timeout=TIMEOUT, allow_redirects=True).json()
-            latest_version = response["tag_name"][2:]
+            latest_version = response["tag_name"][1:]
             latest_url = response["html_url"]
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError, Exception):
             self.show_popup(title="Error", msg="Checking for software update failed.")
