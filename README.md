@@ -9,7 +9,7 @@
 A tool to easily update Kepler Data for WXtoImg with a graphical user interface on Windows.
 
 > [!NOTE]
-> NOAA-19, the last NOAA satellite transmitting APT images, was decommissioned on August 18, 2025. Receiving analog weather images is no longer possible.
+> **NOAA-19**, the last NOAA satellite transmitting APT images, was decommissioned on **August 18, 2025**. Receiving analog weather images is no longer possible.
 
 ## Table of Contents
 
