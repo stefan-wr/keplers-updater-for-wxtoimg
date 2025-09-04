@@ -55,7 +55,7 @@ def is_keplers(data: str) -> bool:
     if data == "":
         return False
 
-    noaa_found = {'NOAA 15': False, 'NOAA 18': False, 'NOAA 19': False}
+    #noaa_found = {'NOAA 15': False, 'NOAA 18': False, 'NOAA 19': False}
     data_lines = data.splitlines()
     for i in range(0, len(data_lines), 3):
 
@@ -70,11 +70,11 @@ def is_keplers(data: str) -> bool:
             return False
 
         # Look for the NOAA satellites
-        if data_lines[i].rstrip() in noaa_found:
-            noaa_found[data_lines[i].rstrip()] = True
+        #if data_lines[i].rstrip() in noaa_found:
+        #    noaa_found[data_lines[i].rstrip()] = True
 
     # Check if NOAA 15, 18 and 19 were found.
-    if not all(noaa_found.values()):
-        return False
+    #if not all(noaa_found.values()):
+    #    return False
 
     return True

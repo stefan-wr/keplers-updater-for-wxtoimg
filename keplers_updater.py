@@ -9,7 +9,7 @@ from datetime import datetime
 import math
 from myutils import Popup, resource_path, is_keplers
 
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 
 WXTOIMG_DIR = os.path.join(os.getenv('APPDATA'), 'WXtoImg')
 CFG_PATH = os.path.join(WXTOIMG_DIR, 'kepler-updater.cfg')
